@@ -32,13 +32,13 @@ public class Rectangle extends Shape {
         displayResults("rectangle");
     }
 
-    /** Draw a horizontal example rectangle below the circle and square. */
+    /** Draw a vertical rectangle in the lower-right of the canvas. */
     public void draw() {
-        // Display scaling follows the wide rectangle in the lab screenshot.
-        // The dimensions used for area and perimeter remain unchanged.
-        double displayLength = Math.min(5.0 * length, 270.0);
-        double displayWidth = Math.min(width, 70.0);
+        // Scale the vertical side for the 50-by-60 example in the lab figure.
+        // Area and perimeter still use the dimensions entered by the user.
+        double displayLength = Math.min(1.6 * length, 90.0);
+        double displayWidth = Math.min(width, 85.0);
         Canvas.getCanvas().draw(this, "blue",
-                new Rectangle2D.Double(15, 215, displayLength, displayWidth));
+                new Rectangle2D.Double(205, 205, displayWidth, displayLength));
     }
 }
