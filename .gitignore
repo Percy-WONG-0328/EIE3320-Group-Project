@@ -1,0 +1,7 @@
+# Java and BlueJ generated files
+*.class
+*.ctxt
+__SHELL*.java
+*.java~
+.DS_Store
+
